@@ -1,0 +1,3 @@
+public class Game {
+    //vai inicar o pet, comer, dormir, brincar etc...
+}
