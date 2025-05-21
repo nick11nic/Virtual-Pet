@@ -1,6 +1,6 @@
 public class Pet {
     
-    //armazenar o estado do personagem
+    //armazenar o estado do pet
 
     private String nome;
     private String sobrenome;
