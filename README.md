@@ -16,4 +16,3 @@ O **Virtual Pet** é um sistema em Java que simula um bichinho virtual, permitin
 * Salvamento de dados do pet
 * Uso de coleção (ArrayList)
 * Tratamento de exceções personalizados
-oi
