@@ -1,8 +1,8 @@
 # Virtual Pet 🐶
 
-### Integrante:
+### Integrantes:
 
-- Nicole Guarnieri
+- Nicole Guarnieri, Maria Paula Felix
 
 ## Sobre o Projeto
 
