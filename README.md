@@ -2,7 +2,7 @@
 
 ### Integrante:
 
-- Nicole Guarnieri
+- Nicole Guarnieri teste
 
 ## Sobre o Projeto
 
