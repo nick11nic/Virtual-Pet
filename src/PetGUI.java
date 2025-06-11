@@ -73,8 +73,4 @@ public class PetGUI{
     pet.brincar();
     atualizarBarras();
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> a3fe50ac4e4094221e597e7010ecb8a225c8172d

@@ -54,8 +54,4 @@ public class Pet {
   public Diversao getDiversao() {
     return diversao;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> a3fe50ac4e4094221e597e7010ecb8a225c8172d
