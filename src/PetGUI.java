@@ -89,9 +89,9 @@ public class PetGUI {
         nomeLabel.setFont(new Font("Arial", Font.BOLD, 16));
         panel.add(nomeLabel);
         
-        fomeBar = criarBarraStatus("Fome", Color.PINK);
-        energiaBar = criarBarraStatus("Energia", Color.BLUE);
-        diversaoBar = criarBarraStatus("Diversão", Color.GREEN);
+        fomeBar = criarBarraStatus("Fome", new Color(231, 84, 128)); 
+        energiaBar = criarBarraStatus("Energia", new Color(100, 181, 246)); 
+        diversaoBar = criarBarraStatus("Diversão", new Color(144, 238, 144)); 
         
         panel.add(fomeBar);
         panel.add(energiaBar);
