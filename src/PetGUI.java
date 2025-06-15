@@ -47,16 +47,13 @@ public class PetGUI {
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         startButton.setPreferredSize(new Dimension(100, 30));
         startButton.addActionListener(e -> {
-            String nomePet = nomeField.getText().trim();
-            if (nomePet.isEmpty()) {
-                JOptionPane.showMessageDialog(frame, 
-                    "Por favor, digite um nome para seu pet!", 
-                    "Nome Necessário", 
-                    JOptionPane.WARNING_MESSAGE);
-            } else {
-                iniciarJogo(nomePet);
-            }
-        });
+    String nomePet = nomeField.getText().trim();
+    try {
+        iniciarJogo(nomePet);
+    } catch (NomePetInvalidoException ex) {
+        JOptionPane.showMessageDialog(frame, ex.getMessage(), "Nome Inválido", JOptionPane.ERROR_MESSAGE);
+    }
+});
         
         nomeField.addActionListener(e -> startButton.doClick());
         
@@ -68,12 +65,12 @@ public class PetGUI {
         nomeField.requestFocusInWindow();
     }
     
-    private void iniciarJogo(String nomePet) {
-        frame.dispose(); 
-        this.pet = new Pet(nomePet); 
-        criarGUI();
-        atualizarBarras();
-    }
+    private void iniciarJogo(String nomePet) throws NomePetInvalidoException {
+    this.pet = new Pet(nomePet);
+    frame.dispose();
+    criarGUI();
+    atualizarBarras();
+}
     
     private void criarGUI() {
         frame = new JFrame("Virtual Pet - " + pet.getNome());

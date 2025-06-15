@@ -9,7 +9,10 @@ public class Pet {
   private Diversao diversao;
   private Timer timer;
 
-  public Pet(String nome){
+  public Pet(String nome) throws NomePetInvalidoException {
+    if (nome == null || nome.trim().isEmpty()) {
+        throw new NomePetInvalidoException("O nome do pet não pode ser vazio.");
+    }
     this.nome = nome;
     this.fome = new Fome(100);
     this.energia = new Energia(100);
